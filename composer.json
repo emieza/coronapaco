@@ -1,0 +1,14 @@
+{
+    "name": "root/coronapaco",
+    "description": "viruses a gogo",
+    "type": "php",
+    "require": {
+        "php": "^7.2"
+    },
+    "authors": [
+        {
+            "name": "Enric Mieza",
+            "email": "emieza@xtec.cat"
+        }
+    ]
+}
