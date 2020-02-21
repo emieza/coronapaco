@@ -3,7 +3,8 @@
     "description": "viruses a gogo",
     "type": "php",
     "require": {
-        "php": "^7.2"
+        "php": "^7.2",
+        "csanquer/pdo-service-provider": "~1.1dev"
     },
     "authors": [
         {
