@@ -5,9 +5,15 @@
 	<style type="text/css">
 		.ok {
 			color: green;
+			font-size: 30px;
+			border: 1px solid green;
+			border-radius: 1em;
 		}
 		.fail {
 			color: red;
+			font-size: 30px;
+			border: 1px solid red;
+			border-radius: 1em;
 		}
 	</style>
 </head>
