@@ -2,6 +2,14 @@
 <html>
 <head>
 	<title></title>
+	<style type="text/css">
+		.ok {
+			color: green;
+		}
+		.fail {
+			color: red;
+		}
+	</style>
 </head>
 <body>
 
@@ -38,9 +46,9 @@ if( isset($_POST["usuari"]) ) {
 	$result = pg_query($query) or die('La consulta fallo: ' . pg_last_error());
 	
 	if( pg_num_rows($result)>0 ) {
-		echo "<p>OK</p>";
+		echo "<p class='ok'>OK</p>";
 	} else {
-		echo "<p>Fail</p>";
+		echo "<p class='fail'>Fail</p>";
 	}
 
 }
