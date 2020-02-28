@@ -7,13 +7,16 @@
 			color: green;
 			font-size: 30px;
 			border: 1px solid green;
-			border-radius: 1em;
+			border-radius: .7em;
+			text-align: center;
 		}
+
 		.fail {
 			color: red;
 			font-size: 30px;
 			border: 1px solid red;
-			border-radius: 1em;
+			border-radius: .7em;
+			text-align: center;
 		}
 	</style>
 </head>
