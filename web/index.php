@@ -12,9 +12,6 @@
 
 $dbopts = getenv('DATABASE_URL');
 
-var_dump($dbopts);
-echo "<br>";
-
 // Conectando y seleccionado la base de datos  
 $dbconn = pg_connect($dbopts)
     or die('No se ha podido conectar: ' . pg_last_error());
