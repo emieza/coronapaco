@@ -10,13 +10,13 @@
 
 <?php
 
-$dbopts = parse_url(getenv('DATABASE_URL'));
+$dbopts = getenv('DATABASE_URL');
 
 var_dump($dbopts);
 echo "<br>";
 
 // Conectando y seleccionado la base de datos  
-$dbconn = pg_connect($dbopts["DATABASE_URL"])
+$dbconn = pg_connect($dbopts)
     or die('No se ha podido conectar: ' . pg_last_error());
 
 echo "CONNECTAT!";
