@@ -34,7 +34,7 @@ if( isset($_POST["usuari"]) ) {
 	//echo "<p>Usuari:$usuari</p><p>Contrasenya:$contrasenya</p>";
 
 	// Realizando una consulta SQL
-	$query = 'SELECT * FROM usuaris WHERE nom=`$usuari` AND password=`$contrasenya`';
+	$query = 'SELECT * FROM usuaris WHERE nom=$usuari AND password=$contrasenya';
 	$result = pg_query($query) or die('La consulta fallo: ' . pg_last_error());
 	
 	if( pg_num_rows($result)>0 ) {
