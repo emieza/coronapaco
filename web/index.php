@@ -12,10 +12,11 @@
 
 $dbopts = parse_url(getenv('DATABASE_URL'));
 
-echo $dbopts."<br>";
+var_dump($dbopts);
+echo "<br>";
 
 // Conectando y seleccionado la base de datos  
-$dbconn = pg_connect("postgres://mmtupwnpdhmqnu:6c440c250c6c5c6af8d9e5dfdbf71e490f9ec6f5eb72142532ec3dbd52033b36@ec2-52-86-33-50.compute-1.amazonaws.com:5432/datk8i4decc3lm")
+$dbconn = pg_connect($dbopts["DATABASE_URL"])
     or die('No se ha podido conectar: ' . pg_last_error());
 
 echo "CONNECTAT!";
